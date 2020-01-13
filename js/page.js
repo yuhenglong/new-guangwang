@@ -73,6 +73,7 @@ $(function() {
         totalPage: 5,
         callback: function(current) {
             $.get("./js/data.json", function(current) {
+                console.log("大肥猪");
                 let i = current - 1;
                 let j = i + 6;
                 for (i; i < j; i++) {
