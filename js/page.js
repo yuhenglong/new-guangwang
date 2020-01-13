@@ -77,6 +77,7 @@ $(function() {
                 var i = current - 1;
                 var j = i + 6;
                 for (i; i < j; i++) {
+                    console.log('我是', i, j);
                     var html = `<div class="am-u-md-4 am-u-lg-4 news-content">
                                     <div class="sPage">
                                         <a href="javascript:void(0)">
