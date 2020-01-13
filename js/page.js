@@ -73,11 +73,22 @@ $(function() {
         totalPage: 5,
         callback: function(current) {
             $.get("./js/data.json", function(data) {
-                var i = current - 1;
-                var j = i + 6;
+                $("#pages").html('');
+                const i = current - 1;
+                const j = i + 6;
                 console.log("大肥猪", i, j);
                 for (i; i < j; i++) {
-                    console.log(i, "dadad");
+                    const html = `<div class="am-u-md-4 am-u-lg-4 news-content">
+                                    <div class="sPage">
+                                        <a href="javascript:void(0)">
+                                            <p><img width="338" height="180" src="` + data.data[i].img + `"></p>
+                                            <p class="newsTitle">` + data.data[i].title + `</p>
+                                            <p class="createTime">` + data.data[i].time + `</p>
+                                            <p class="createTime">` + data.data[i].content + `</p>
+                                        </a>
+                                    </div>
+                                </div>`;
+                    $("#pages").append(html);
                 }
             })
         }
