@@ -87,7 +87,7 @@ function getHash() {
 function getData(num) {
     $.get("./js/data.json", function(data) {
         $("#pages").html('');
-        var i = num - 1;
+        var i = (num - 1) * 6;
         var j = i + 6;
         for (i; i < j; i++) {
             var html = `<div class="am-u-md-4 am-u-lg-4 news-content">
