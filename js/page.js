@@ -73,10 +73,9 @@ $(function() {
         totalPage: 5,
         callback: function(current) {
             $.get("./js/data.json", function(data) {
-                $("#pages").html('');
-                const i = current - 1;
+                $(".page_yu").html('');
+                let i = current - 1;
                 const j = i + 6;
-                console.log("大肥猪", i, j);
                 for (i; i < j; i++) {
                     const html = `<div class="am-u-md-4 am-u-lg-4 news-content">
                                     <div class="sPage">
@@ -88,7 +87,7 @@ $(function() {
                                         </a>
                                     </div>
                                 </div>`;
-                    $("#pages").append(html);
+                    $(".page_yu").append(html);
                 }
             })
         }
