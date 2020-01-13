@@ -73,6 +73,7 @@ $(function() {
         totalPage: 5,
         callback: function(current) {
             $.get("./js/data.json", function(current) {
+                console.log(typeof(current));
                 const num = parseInt(current);
                 var i = num - 1;
                 var j = i + 6;
