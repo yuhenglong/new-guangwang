@@ -73,9 +73,9 @@ $(function() {
         totalPage: 5,
         callback: function(current) {
             $.get("./js/data.json", function(current) {
-                console.log("大肥猪");
-                let i = current - 1;
-                let j = i + 6;
+                var i = current - 1;
+                var j = i + 6;
+                console.log("大肥猪", i, j);
                 for (i; i < j; i++) {
                     console.log(i);
                 }
