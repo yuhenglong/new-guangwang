@@ -1,0 +1,298 @@
+.swiper-background {
+    height: 500px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -ms-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 500
+}
+
+.ty-media,
+.ty-mode,
+.ty-jm,
+.ty-about {
+    height: 500px;
+}
+
+.ty-media {
+    padding: 50px 0;
+}
+
+.ty-media .ty-btn {
+    color: #0E0D12;
+    /* border: 1px solid #0E0D12; */
+    padding: 4px 12px;
+    float: right;
+}
+
+.ty-mode {
+    background: #F0F0F0;
+    text-align: center;
+    padding: 32px 0;
+    height: 600px;
+}
+
+.mode-img {
+    background: #0E0D12;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    position: relative;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.mode-img img {
+    vertical-align: middle;
+    width: 50%;
+}
+
+.mode-p h1 {
+    padding: 27px 0;
+    margin: 0
+}
+
+.mode-p p {
+    text-align: left;
+    line-height: 30px;
+    margin: 0
+}
+
+.ty-jm {
+    padding-top: 60px;
+    text-align: center;
+}
+
+.jm-img {
+    width: 100%;
+}
+
+.jm-context h1 {
+    border-left: 3px solid #000;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.jm-context p {
+    text-align: left;
+    line-height: 30px;
+}
+
+.ty-about {
+    background: #f0f0f0;
+    padding: 40px;
+}
+
+.ty-about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 10px 1px #ccc;
+    height: 100%;
+}
+
+.ctrl-say {
+    background: #ebe9ea;
+    padding: 40px 20px;
+    height: 450px;
+}
+
+.ctrl-say:hover {
+    background: #DEDEDE
+}
+
+.ctrl-say:hover .mode-img {
+    background: #ff751d
+}
+
+.ty-mode .am-u-md-6,
+.ty-mode .am-u-lg-3,
+.ty-mode .am-u-sm-12 {
+    padding: 0 3px 0 3px;
+}
+
+.about-context {
+    width: 100%;
+    border-right: 1px solid #ccc;
+    padding: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-context h1:after {
+    content: '';
+    position: absolute;
+    top: 21px;
+    right: 144px;
+    display: block;
+    width: 2px;
+    height: 24px;
+    background-color: #ff751d;
+}
+
+.about-context img {
+    width: 100%;
+    height: 148px;
+    display: block;
+}
+
+.about-context p {
+    line-height: 30px;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.about-context a {
+    color: #0E0D12;
+    /* border: 1px solid #0E0D12; */
+    padding: 4px 12px;
+    font-size: 14px;
+    float: right;
+}
+
+.ty-item {
+    margin-top: 12px;
+}
+
+.ty-item h3 {
+    margin-top: 4px;
+    margin-bottom: 1px;
+    display: inline-block;
+    font-size: 20px;
+    color: #ff751d;
+    letter-spacing: 1px;
+}
+
+.ty-item>div {
+    font-size: 14px;
+}
+
+.ty-media-img {
+    width: 100%;
+    display: block;
+}
+
+.swiper-next,
+.swiper-prev {
+    position: absolute;
+    width: 17px;
+    height: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.swiper-next img,
+.swiper-prev img {
+    display: block;
+    width: 17px;
+    height: 35px;
+}
+
+.swiper-next {
+    left: 6px;
+    top: 160px;
+}
+
+.swiper-prev {
+    right: 6px;
+    top: 160px;
+}
+
+.swiper-next,
+.swiper-prev {
+    position: absolute;
+    width: 17px;
+    height: 35px;
+    z-index: 2;
+}
+
+
+/* 恒隆start */
+
+.am-nav-pills.am-topbar-nav {
+    float: right;
+}
+
+.am-topbar-brand {
+    height: 100px;
+}
+
+.am-topbar {
+    height: 100px;
+}
+
+.footer_connect {
+    float: left;
+    width: 210px;
+}
+
+.about-context h1 {
+    text-align: center;
+}
+
+.title_yu {
+    text-align: center;
+}
+
+.title_yu h1 {
+    display: inline-block;
+    width: 330px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    position: relative;
+}
+
+.title_yu h1:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background: #ff751d;
+    width: 30px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -15px;
+}
+
+.con_yu {
+    float: left;
+    width: 373.33px;
+    height: auto;
+}
+
+.con_yu:nth-child(2) {
+    margin: 0 40px;
+}
+
+.title_yu h1:before {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid #ccc;
+    bottom: 0;
+    left: -435px;
+    width: 1200px;
+}
+
+.hov_a:hover {
+    color: #ff751d;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ff751d;
+}
+
+
+/* 恒隆end */
