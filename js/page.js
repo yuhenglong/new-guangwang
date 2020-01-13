@@ -95,8 +95,8 @@ function getData(num) {
                                 <a href="javascript:void(0)">
                                     <p><img width="338" height="180" src="` + data.data[i].img + `"></p>
                                     <p class="newsTitle">` + data.data[i].title + `</p>
-                                    <p class="createTime">` + data.data[i].time + i `</p>
-                                    <p class="createTime">` + data.data[i].content + i `</p>
+                                    <p class="createTime">` + data.data[i].time + i + `</p>
+                                    <p class="createTime">` + data.data[i].content + i + `</p>
                                 </a>
                             </div>
                         </div>`;
