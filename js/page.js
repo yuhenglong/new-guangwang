@@ -72,15 +72,13 @@ $(function() {
         currentPage: 1,
         totalPage: 5,
         callback: function(current) {
-            $.get("./js/data.json", function(current) {
-                console.log(typeof(current), current);
-                // const num = parseInt(current);
-                // var i = num - 1;
-                // var j = i + 6;
-                // console.log("大肥猪", i, j);
-                // for (i; i < j; i++) {
-                //     console.log(i);
-                // }
+            $.get("./js/data.json", function(data) {
+                var i = current - 1;
+                var j = i + 6;
+                console.log("大肥猪", i, j);
+                for (i; i < j; i++) {
+                    console.log(i, "dadad");
+                }
             })
         }
     });
