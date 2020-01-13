@@ -72,25 +72,7 @@ $(function() {
         currentPage: 1,
         totalPage: 5,
         callback: function(current) {
-            $.get("./js/data.json", function(data) {
-                $("#pages").html('');
-                var i = current - 1;
-                var j = i + 6;
-                for (i; i < j; i++) {
-                    console.log('我是', i, j);
-                    var html = `<div class="am-u-md-4 am-u-lg-4 news-content">
-                                    <div class="sPage">
-                                        <a href="javascript:void(0)">
-                                            <p><img width="338" height="180" src="` + data.data[i].img + `"></p>
-                                            <p class="newsTitle">` + data.data[i].title + `</p>
-                                            <p class="createTime">` + data.data[i].time + `</p>
-                                            <p class="createTime">` + data.data[i].content + `</p>
-                                        </a>
-                                    </div>
-                                </div>`;
-                    $("#pages").append(html);
-                }
-            })
+            getData(current);
         }
     });
 })
@@ -99,4 +81,26 @@ function getHash() {
     var url = window.location.toString();
     var id = url.split("#")[1];
     return id
+}
+
+// 请求data数据
+function getData(num) {
+    $.get("./js/data.json", function(data) {
+        $("#pages").html('');
+        var i = num - 1;
+        var j = i + 6;
+        for (i; i < j; i++) {
+            var html = `<div class="am-u-md-4 am-u-lg-4 news-content">
+                            <div class="sPage">
+                                <a href="javascript:void(0)">
+                                    <p><img width="338" height="180" src="` + data.data[i].img + `"></p>
+                                    <p class="newsTitle">` + data.data[i].title + `</p>
+                                    <p class="createTime">` + data.data[i].time + i `</p>
+                                    <p class="createTime">` + data.data[i].content + i `</p>
+                                </a>
+                            </div>
+                        </div>`;
+            $("#pages").append(html);
+        }
+    })
 }
