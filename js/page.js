@@ -73,7 +73,7 @@ $(function() {
         totalPage: 5,
         callback: function(current) {
             $.get("./js/data.json", function(data) {
-                $(".page_yu").html('');
+                $("#pages").html('');
                 var i = current - 1;
                 var j = i + 6;
                 for (i; i < j; i++) {
@@ -88,7 +88,7 @@ $(function() {
                                         </a>
                                     </div>
                                 </div>`;
-                    $(".page_yu").append(html);
+                    $("#pages").append(html);
                 }
             })
         }
