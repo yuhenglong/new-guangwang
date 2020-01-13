@@ -74,10 +74,10 @@ $(function() {
         callback: function(current) {
             $.get("./js/data.json", function(data) {
                 $(".page_yu").html('');
-                let i = current - 1;
-                const j = i + 6;
+                var i = current - 1;
+                var j = i + 6;
                 for (i; i < j; i++) {
-                    const html = `<div class="am-u-md-4 am-u-lg-4 news-content">
+                    var html = `<div class="am-u-md-4 am-u-lg-4 news-content">
                                     <div class="sPage">
                                         <a href="javascript:void(0)">
                                             <p><img width="338" height="180" src="` + data.data[i].img + `"></p>
