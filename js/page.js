@@ -70,7 +70,7 @@ $(function() {
     // 分页功能
     $("#pagination1").pagination({
         currentPage: 1,
-        totalPage: 5,
+        totalPage: 3,
         callback: function(current) {
             getData(current);
         }
@@ -95,8 +95,8 @@ function getData(num) {
                                 <a href="javascript:void(0)">
                                     <p><img width="338" height="180" src="` + data.dataNew[i].img + `"></p>
                                     <p class="newsTitle">` + data.dataNew[i].title + `</p>
-                                    <p class="createTime">` + data.dataNew[i].time + i + `</p>
-                                    <p class="createTime">` + data.dataNew[i].content + i + `</p>
+                                    <p class="createTime">` + data.dataNew[i].time + `</p>
+                                    <p class="createTime">` + data.dataNew[i].content + `</p>
                                 </a>
                             </div>
                         </div>`;
