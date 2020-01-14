@@ -33,10 +33,10 @@
             width: 1200px;
             height: 100%;
         }
-        /* .slide_h {
-            width: 500px;
-            height: 450px;
-        } */
+        
+        .books {
+            padding-bottom: 0;
+        }
         
         .swiper-slide {
             text-align: center;
@@ -268,14 +268,64 @@
                     <!-- Swiper -->
                     <div class="swiper-container slide_h">
                         <div class="swiper-wrapper" id="swiper-wrapper-import">
-                            <!-- <div class="swiper-slide">
+                            <div class="swiper-slide">
                                 <div class="slide_box">
-                                    <h3>云股传媒上市智联</h3>
-                                    <p class="slide_time">2019-10-1</p>
+                                    <h3>云股传媒上市之旅</h3>
+                                    <p class="slide_time">2019-05-07</p>
                                     <img src="img/shangshi.png" alt="">
                                     <p class="slide_con">美国时间4月24日,北京时间4月25日云股中国「YGCN」董事局主席杨新宇先生，云股中国董事局独立董事（北京盈科律所资深律师）陈治全先生，正式踏上了云股传媒的上市之旅。</p style="width:100%;">
                                 </div>
-                            </div> -->
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_box">
+                                    <h3>颁奖典礼|喜提创新技术奖</h3>
+                                    <p class="slide_time">2019-04-10</p>
+                                    <img src="img/cxj.png" alt="">
+                                    <p class="slide_con">​​2019年3月20日云股传媒凭借裸眼3D立体广告机的独创技术获得卓越品牌组委会的青睐，提名荣获第十届“深受游客欢迎 - 中华卓越品牌”创新技术奖。</p style="width:100%;">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_box">
+                                    <h3>物联网 云服务产业合作</h3>
+                                    <p class="slide_time">2019-03-20</p>
+                                    <img src="img/wlw.png" alt="">
+                                    <p class="slide_con">2019年1月11日，广东云股传媒股份有限公司与郑州信大捷安信息技术股份有限公司和华为软件技术有限公司正式签订《物联网 云服务产业合作》。以物联网云服务项目为主，三方将进行深入合作。</p style="width:100%;">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_box">
+                                    <h3>“深受游客欢迎-中华卓越品牌”创新技术奖</h3>
+                                    <p class="slide_time">2019-03-20</p>
+                                    <img src="img/cxjsj.jpg" alt="">
+                                    <p class="slide_con">云股传媒凭借裸眼3D立体广告机的独创技术获得卓越品牌组委会的青睐，提名荣获第十届深受“游客欢迎-中华卓越品牌”创新技术奖。颁奖典礼将于2019年3月20日举办，敬请期待！</p style="width:100%;">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_box">
+                                    <h3>马来西亚国际传媒公司IOT亲临云股传媒</h3>
+                                    <p class="slide_time">2018-12-29</p>
+                                    <img src="img/mlxy.jpg" alt="">
+                                    <p class="slide_con">2018年8月9日马来西亚国际传媒公司IOT亲临云股传媒，双方已达成合作协议，云股传媒即将登陆国际机场-马来西亚吉隆坡国际机场，云股传媒已经开启迈向国际化平台的步伐，大家拭目以待！</p style="width:100%;">
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide">
+                                <div class="slide_box">
+                                    <h3>云股传媒与广州博融智库咨询服务有限公司合作</h3>
+                                    <p class="slide_time">2018-12-28</p>
+                                    <img src="img/brzk.jpg" alt="">
+                                    <p class="slide_con">2018年8月9日云股传媒与广州博融智库咨询服务有限公司合作。</p style="width:100%;">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide_box">
+                                    <h3>云股传媒裸眼3D入驻成都</h3>
+                                    <p class="slide_time">2019-12-28</p>
+                                    <img src="img/cdrz.jpg" alt="">
+                                    <p class="slide_con">2018年8月9日云股传媒裸眼3D入驻成都，开设分公司。</p style="width:100%;">
+                                </div>
+                            </div>
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -504,27 +554,8 @@
 <script src="js/page.js"></script>
 <script>
     $(document).ready(function() {
-
         getData(1);
     });
-    getImportData();
-    // 请求data数据-重大事件
-    function getImportData() {
-        $.get("./js/data.json", function(data) {
-            const len = data.dataImportant.length;
-            for (let i = 0; i < len; i++) {
-                const html = `<div class="swiper-slide">
-                                <div class="slide_box">
-                                    <h3>` + data.dataImportant[i].title + `</h3>
-                                    <p class="slide_time">` + data.dataImportant[i].time + `</p>
-                                    <img src="img/` + data.dataImportant[i].img + `" alt="">
-                                    <p class="slide_con">` + data.dataImportant[i].content + `</p style="width:100%;">
-                                </div>
-                            </div>`;
-                $("#swiper-wrapper-import").append(html);
-            }
-        })
-    }
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 3,
         spaceBetween: 30,
