@@ -15,6 +15,7 @@
     <link href="css/amazeui.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/amazeui.swiper.min.css" />
     <link rel="stylesheet" href="css/jquery.pagination.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
     <link href="css/main.css" rel="stylesheet">
     <link href="css/page.css" rel="stylesheet">
     <style>
@@ -26,6 +27,41 @@
         
         #pagination1 {
             text-align: center;
+        }
+        
+        .swiper-container {
+            width: 1200px;
+            height: 100%;
+        }
+        
+        .slide_h {
+            height: 450px;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            transition: 300ms;
+            transform: scale(0.8);
+        }
+        
+        .swiper-slide-active,
+        .swiper-slide-duplicate-active {
+            transform: scale(1);
         }
     </style>
 </head>
@@ -229,11 +265,20 @@
                     </div>
                 </div>
                 <div class="am-article">
-                    <div class="am-article-bd clearfix">
-                        <p style="text-align: center;">
-                            <img title="1572493141257045755.png" alt="功能介绍.png" data-original="http://120.77.159.195:8081/ty/ueditor/jsp/upload/image/20191031/1572493141257045755.png" _data-original="http://120.77.159.195:8081/ty/ueditor/jsp/upload/image/20191031/1572493141257045755.png"
-                            />
-                        </p>
+                    <!-- Swiper -->
+                    <div class="swiper-container slide_h">
+                        <div class="swiper-wrapper" id="swiper-wrapper-import">
+                            <!-- <div class="swiper-slide">
+                                <div class="slide_box">
+                                    <h3>云股传媒上市智联</h3>
+                                    <p class="slide_time">2019-10-1</p>
+                                    <img src="img/shangshi.png" alt="">
+                                    <p class="slide_con">美国时间4月24日,北京时间4月25日云股中国「YGCN」董事局主席杨新宇先生，云股中国董事局独立董事（北京盈科律所资深律师）陈治全先生，正式踏上了云股传媒的上市之旅。</p style="width:100%;">
+                                </div>
+                            </div> -->
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -455,11 +500,27 @@
 <script src="js/lib/amazeui.min.js"></script>
 <script src="js/lib/amazeui.lazyload.min.js"></script>
 <script src="js/jquery.pagination.min.js"></script>
+<script src="js/swiper.js"></script>
 <script src="js/page.js"></script>
 <script>
     $(document).ready(function() {
         getData(1);
-    })
+        getImportData();
+    });
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 </script>
 
 </html>

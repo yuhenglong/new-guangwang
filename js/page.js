@@ -83,7 +83,7 @@ function getHash() {
     return id
 }
 
-// 请求data数据
+// 请求data数据-新闻动态
 function getData(num) {
     $.get("./js/data.json", function(data) {
         $("#pages").html('');
@@ -93,14 +93,32 @@ function getData(num) {
             var html = `<div class="am-u-md-4 am-u-lg-4 news-content">
                             <div class="sPage">
                                 <a href="javascript:void(0)">
-                                    <p><img width="338" height="180" src="` + data.data[i].img + `"></p>
-                                    <p class="newsTitle">` + data.data[i].title + `</p>
-                                    <p class="createTime">` + data.data[i].time + i + `</p>
-                                    <p class="createTime">` + data.data[i].content + i + `</p>
+                                    <p><img width="338" height="180" src="` + data.dataNew[i].img + `"></p>
+                                    <p class="newsTitle">` + data.dataNew[i].title + `</p>
+                                    <p class="createTime">` + data.dataNew[i].time + i + `</p>
+                                    <p class="createTime">` + data.dataNew[i].content + i + `</p>
                                 </a>
                             </div>
                         </div>`;
             $("#pages").append(html);
+        }
+    })
+}
+
+// 请求data数据-重大事件
+function getImportData() {
+    $.get("./js/data.json", function(data) {
+        const len = data.dataImportant.length;
+        for (let i = 0; i < len; i++) {
+            const html = `<div class="swiper-slide">
+                                <div class="slide_box">
+                                    <h3>` + data.dataImportant[i].title + `</h3>
+                                    <p class="slide_time">` + data.dataImportant[i].time + `</p>
+                                    <img src="img/` + data.dataImportant[i].img + `" alt="">
+                                    <p class="slide_con">` + data.dataImportant[i].content + `</p style="width:100%;">
+                                </div>
+                            </div>`;
+            $("#swiper-wrapper-import").html(html);
         }
     })
 }

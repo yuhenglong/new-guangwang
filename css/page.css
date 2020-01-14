@@ -361,3 +361,26 @@ li {
     padding-top: 10px;
     display: block;
 }
+
+.slide_box {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+}
+
+.slide_box .slide_time {
+    font-size: 14px;
+    color: #999;
+}
+
+.slide_box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slide_box .slide_con {
+    font-size: 14px;
+    line-height: 22px;
+}
