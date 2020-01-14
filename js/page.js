@@ -104,21 +104,3 @@ function getData(num) {
         }
     })
 }
-
-// 请求data数据-重大事件
-function getImportData() {
-    $.get("./js/data.json", function(data) {
-        const len = data.dataImportant.length;
-        for (let i = 0; i < len; i++) {
-            const html = `<div class="swiper-slide">
-                                <div class="slide_box">
-                                    <h3>` + data.dataImportant[i].title + `</h3>
-                                    <p class="slide_time">` + data.dataImportant[i].time + `</p>
-                                    <img src="img/` + data.dataImportant[i].img + `" alt="">
-                                    <p class="slide_con">` + data.dataImportant[i].content + `</p style="width:100%;">
-                                </div>
-                            </div>`;
-            $("#swiper-wrapper-import").append(html);
-        }
-    })
-}
