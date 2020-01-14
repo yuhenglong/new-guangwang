@@ -118,7 +118,7 @@ function getImportData() {
                                     <p class="slide_con">` + data.dataImportant[i].content + `</p style="width:100%;">
                                 </div>
                             </div>`;
-            $("#swiper-wrapper-import").html(html);
+            $("#swiper-wrapper-import").append(html);
         }
     })
 }
