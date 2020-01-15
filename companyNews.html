@@ -549,6 +549,14 @@
 <script>
     $(document).ready(function() {
         getData(1);
+        // 分页功能
+        $("#pagination1").pagination({
+            currentPage: 1,
+            totalPage: 3,
+            callback: function(current) {
+                getData(current);
+            }
+        });
     });
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 3,

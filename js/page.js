@@ -67,14 +67,7 @@ $(function() {
         $(".change .a_img").siblings().removeClass("z_index_top");
         $(".change .a_img").eq(index).addClass("z_index_top");
     });
-    // 分页功能
-    $("#pagination1").pagination({
-        currentPage: 1,
-        totalPage: 3,
-        callback: function(current) {
-            getData(current);
-        }
-    });
+
 })
 
 function getHash() {
