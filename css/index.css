@@ -294,5 +294,21 @@ h1 {
     background: #ff751d;
 }
 
+.v_yu {
+    float: right;
+}
+
+.vi_right {
+    float: left;
+    width: 500px;
+}
+
+.vi_left {
+    float: left;
+    width: 700px;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+
 
 /* 恒隆end */
