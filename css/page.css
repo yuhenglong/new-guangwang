@@ -391,3 +391,18 @@ li {
     margin: 100px auto 0;
     height: 34px;
 }
+
+.span_af {
+    position: relative;
+}
+
+.span_af:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: -16px;
+    display: block;
+    width: 2px;
+    height: 24px;
+    background-color: #ff751d;
+}
