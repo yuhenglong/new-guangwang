@@ -436,6 +436,10 @@ li {
     color: #fff;
 }
 
+.pro_yy .bb p:hover {
+    cursor: pointer;
+}
+
 .sp {
     line-height: 24px;
     font-size: 18px;
@@ -449,4 +453,38 @@ li {
     width: 400px;
     height: 306px;
     float: left;
+}
+
+.zzt,
+.bzt {
+    width: 600px;
+    float: left;
+}
+
+.analyse {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.analyse p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.analyse span {
+    /* display: block; */
+    font-size: 24px;
+    line-height: 24px;
+    position: relative;
+}
+
+.analyse span:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -10px;
+    display: block;
+    width: 2px;
+    height: 24px;
+    background-color: #ff751d;
 }
