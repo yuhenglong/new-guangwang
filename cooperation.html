@@ -14,8 +14,47 @@
     <META name="robots" name="all">
     <link href="css/amazeui.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/amazeui.swiper.min.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
     <link href="css/main.css" rel="stylesheet">
     <link href="css/page.css" rel="stylesheet">
+    <style>
+        .swiper_box {
+            height: 560px;
+        }
+        
+        .swiper-container {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .gallery-top {
+            height: 80%;
+            width: 100%;
+        }
+        
+        .gallery-thumbs {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+        
+        .gallery-thumbs .swiper-slide {
+            height: 100%;
+            opacity: 0.4;
+        }
+        
+        .gallery-thumbs .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
@@ -203,7 +242,7 @@
                         </div>
                     </div>
                     <div class="analyse">
-                        <p><span>分析结果</span></p>
+                        <p><span class="span_af">分析结果</span></p>
                         <p>75%的人拥有4000元以上月收入(税后)，具备较高的消费能力和消费欲望。</p>
                         <p>64.9%的受众为企业白领、失业管理层及社会中坚力量，具备高品质的生活需求。</p>
                     </div>
@@ -219,43 +258,30 @@
                     </div>
                 </div>
                 <div class="am-article">
-                    <div class="am-article-bd clearfix">
+                    <div class="swiper_box">
+                        <!-- Swiper -->
+                        <div class="swiper-container gallery-top">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background-image:url(img/advan_1.png);background-size:1200px auto"></div>
+                                <div class="swiper-slide" style="background-image:url(img/advan_2.png);background-size:1200px auto"></div>
+                                <div class="swiper-slide" style="background-image:url(img/advan_3.png);background-size:1200px auto"></div>
+                                <div class="swiper-slide" style="background-image:url(img/advan_4.png);background-size:1200px auto"></div>
+                                <div class="swiper-slide" style="background-image:url(img/advan_5.png);background-size:1200px auto"></div>
 
-                        <p><br/></p>
-                        <table width="-150" style="width: 1200px;">
-                            <tbody>
-                                <tr class="firstRow">
-                                    <td width="350" valign="top" style="word-break: break-all;" height="196">
-                                        <p style="text-align:center"><img data-original="http://120.77.159.195:8081/ty/ueditor/jsp/upload/image/20170504/1493866543995076229.png" title="" _data-original="http://120.77.159.195:8081/ty/ueditor/jsp/upload/image/20170504/1493866543995076229.png"
-                                                alt="1.png" /></p>
-                                    </td>
-                                    <td width="75" valign="top" style="word-break: break-all;" height="196"></td>
-                                    <td width="350" valign="top" style="word-break: break-all;" height="196">
-                                        <p style="text-align:center"><img data-original="http://120.77.159.195:8081/ty/ueditor/jsp/upload/image/20170504/1493866555730066935.png" _data-original="http://120.77.159.195:8081/ty/ueditor/jsp/upload/image/20170504/1493866555730066935.png"
-                                                alt="2.png" /></p>
-                                    </td>
-                                    <td width="75" valign="top" style="word-break: break-all;" height="196"></td>
-                                    <td width="350" valign="top" height="196">
-                                        <p style="text-align:center"><img data-original="http://120.77.159.195:8081/ty/ueditor/jsp/upload/image/20170504/1493866572860038443.png" _data-original="http://120.77.159.195:8081/ty/ueditor/jsp/upload/image/20170504/1493866572860038443.png"
-                                                alt="3.png" /></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="159" valign="top" style="word-break: break-all;">
-                                        <p style="text-indent: 0em; font-size: 14px; text-align: justify; line-height: 2em;"><span style="font-family: DengXian; font-size: 14px;">总部拥有行业内一流研发团队，目前该设备拥有领先的核心技术。此外，研发团队负责后期设备的更新迭代，致力于从DLP到激光投影、全息投影的革新，同时引进移动端技术与设备的互通。</span></p>
-                                    </td>
-                                    <td width="159" valign="top" style="word-break: break-all;"></td>
-                                    <td width="159" valign="top" style="word-break: break-all;">
-                                        <p style="text-indent: 0em; font-size: 14px; text-align: justify; line-height: 2em;"><span style="font-family: DengXian; font-size: 14px;">通过加盟总部的全国布局，借助母公司背后品牌的影响力，总部给予的媒介采购商资源、大客户资源、媒体整合销售能力是单个城市无法比拟的。另外，总部针对区域商的系统化培训将快速提高当地的营销能力。</span></p>
-                                    </td>
-                                    <td width="159" valign="top" style="word-break: break-all;"></td>
-                                    <td width="159" valign="top" style="word-break: break-all;">
-                                        <p style="text-indent: 0em; font-size: 14px; text-align: justify; line-height: 2em;"><span style="font-family: DengXian; font-size: 14px;">借助于总部的强大品牌背景及资本方的关注，区域商将更有机会参与到总部的证券化运作，亦有可能未来被对价收购或成为上市合伙人，产生难以估量的效益增长。</span></p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next swiper-button-white"></div>
+                            <div class="swiper-button-prev swiper-button-white"></div>
+                        </div>
+                        <div class="swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background-image:url(img/advan_1.png);"></div>
+                                <div class="swiper-slide" style="background-image:url(img/advan_2.png);"></div>
+                                <div class="swiper-slide" style="background-image:url(img/advan_3.png);"></div>
+                                <div class="swiper-slide" style="background-image:url(img/advan_4.png);"></div>
+                                <div class="swiper-slide" style="background-image:url(img/advan_5.png);"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -265,34 +291,90 @@
             <div class="am-container">
                 <div class="title">
                     <div>
-                        <span>合作前景</span>
+                        <span>提供服务</span>
                     </div>
                 </div>
                 <div class="am-article">
                     <div class="am-article-bd clearfix">
+                        <div class="serve">
+                            <p class="p_one">定制广告方案</p>
+                            <p class="p_two">素材设计建议</p>
+                            <p class="p_thr">检测报告提供</p>
+                            <p class="p_fou">第三方检测报告</p>
+                        </div>
+                        <div class="analyse">
+                            <p><span class="span_af">服务流程</span></p>
+                            <div class="serve_lc">
+                                <div class="serv_top">
+                                    <div class="top_mil">
+                                        <img src="img/chfa.png" alt="">
+                                        <div class="top_dev">
 
-                        <table style="width:1200px">
-                            <tbody>
-                                <tr class="firstRow">
-                                    <td width="650" valign="top" style="word-break: break-all;">
-                                        <p></p>
-                                        <p style="white-space: normal;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><br/></span></strong></p>
-                                        <p style="white-space: normal; line-height: 1.75em;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">— 收购上市</span></strong><br/></p>
-                                        <p style="white-space: normal; line-height: 1.75em;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">区域商阶段内开发总量达到总部制定的任务指标后，将有机会进入总部上市计划收购名单。总部可与其磋商约定利润、网点覆盖等各项指标并签署正式收购协议。</span></p>
-                                        <p style="white-space: normal; line-height: 1.75em;"><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;"><br/></span></p>
-                                        <p style="white-space: normal; line-height: 1.75em;"><strong><span style="font-family: 微软雅黑, &quot;Microsoft YaHei&quot;;">— 优先购买权</span></strong></p>
-                                        <p style="white-space: normal; line-height: 1.75em;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px;">若合作期三年后双方未能进入上市运行通道，区域商可有权自行处置设备，或交给总部折价回收，并在设备更新升级时享有优先购买设备及系统的权力。</span></p>
-                                    </td>
-                                    <td valign="top" colspan="1" rowspan="1" width="50"></td>
-                                    <td width="500" valign="top" style="word-break: break-all;">
-                                        <p style="text-align:center"><img data-original="http://120.77.159.195:8081/ty/ueditor/jsp/upload/image/20170428/1493366040276069015.png" _data-original="http://120.77.159.195:8081/ty/ueditor/jsp/upload/image/20170428/1493366040276069015.png"
-                                                alt="hzqj.png" /></p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p><br/></p>
+                                        </div>
+                                    </div>
+                                    <div class="top_mil">
+                                        <img src="img/sjlc.png" alt="">
+                                        <div class="top_dev">
 
+                                        </div>
+                                    </div>
+                                    <div class="top_mil">
+                                        <img src="img/qdht.png" alt="">
+                                        <div class="top_dev">
+
+                                        </div>
+                                    </div>
+                                    <div class="top_mil">
+                                        <img src="img/zfkx.png" alt="">
+                                        <div class="top_dev">
+
+                                        </div>
+                                    </div>
+                                    <div class="top_mil">
+                                        <img src="img/jcbg.png" alt="">
+                                        <div class="top_dev">
+
+                                        </div>
+                                    </div>
+                                    <div class="top_mil">
+                                        <img src="img/hbtj.png" alt="">
+                                        <div class="top_dev">
+
+                                        </div>
+                                    </div>
+                                    <div class="top_mil">
+                                        <img src="img/jywc.png" alt="">
+                                        <div class="top_dev">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="serv_mil"></div>
+                                <div class="serv_top serv_fot">
+                                    <div class="top_mil">
+                                        <span>策划方案</span>
+                                    </div>
+                                    <div class="top_mil">
+                                        <span>设计流程</span>
+                                    </div>
+                                    <div class="top_mil">
+                                        <span>签订合同</span>
+                                    </div>
+                                    <div class="top_mil">
+                                        <span>支付款项</span>
+                                    </div>
+                                    <div class="top_mil">
+                                        <span>检测报告</span>
+                                    </div>
+                                    <div class="top_mil">
+                                        <span>汇报统计</span>
+                                    </div>
+                                    <div class="top_mil">
+                                        <span>合作完成</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -442,7 +524,6 @@
                         </a>
                     </h3>
 
-
                     <li>
                         <a href="./cooperation.html#5-1">
                                 合作形式
@@ -523,6 +604,7 @@
 <script src="js/lib/amazeui.swiper.min.js"></script>
 <script src="js/lib/amazeui.min.js"></script>
 <script src="js/lib/amazeui.lazyload.min.js"></script>
+<script src="js/swiper.js"></script>
 <script src="js/page.js"></script>
 <!-- ecahrts柱状图 -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
@@ -570,13 +652,13 @@
             },
         }],
         series: [{
-            name: '收入水平:(占比)',
+            name: '收入水平:(%)',
             type: 'bar',
             label: {
                 normal: {
                     show: true,
                     position: 'top',
-                    formatter: '{c}%'　
+                    formatter: '{c}%'
                 }
             },
             itemStyle: {
@@ -676,6 +758,34 @@
     if (option && typeof option === "object") {
         myChart.setOption(option, true);
     }
+</script>
+<!-- Initialize Swiper -->
+<script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        loop: true,
+        freeMode: true,
+        loopedSlides: 5, //looped slides should be the same
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        loop: true,
+        loopedSlides: 5, //looped slides should be the same
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        thumbs: {
+            swiper: galleryThumbs,
+        },
+    });
 </script>
 
 </html>

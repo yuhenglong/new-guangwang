@@ -472,19 +472,138 @@ li {
 }
 
 .analyse span {
-    /* display: block; */
     font-size: 24px;
     line-height: 24px;
+}
+
+.serve {
+    height: 350px;
+    overflow: hidden;
+    background-image: url('../img/bgt.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1200px 800px;
     position: relative;
 }
 
-.analyse span:before {
-    content: '';
+.serve p {
+    cursor: default;
+}
+
+.serve .p_one {
     position: absolute;
-    top: 6px;
-    left: -10px;
-    display: block;
-    width: 2px;
-    height: 24px;
-    background-color: #ff751d;
+    top: 98px;
+    left: 41px;
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.serve .p_two {
+    position: absolute;
+    top: 223px;
+    left: 363px;
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.serve .p_thr {
+    position: absolute;
+    top: 113px;
+    left: 715px;
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.serve .p_fou {
+    position: absolute;
+    top: 220px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.serv_mil {
+    width: 1200px;
+    height: 30px;
+}
+
+.serv_mil {
+    width: 1200px;
+    height: 30px;
+    background: url("../img/ht.jpg") no-repeat center;
+}
+
+.serv_top {
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    margin: 30px 0 20px;
+}
+
+.serv_top .top_mil {
+    position: relative;
+    width: 122px;
+    height: 122px;
+    float: left;
+    margin: 0 26.9px;
+}
+
+.top_mil img {
+    height: 75px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    margin-top: -33px;
+    left: 50%;
+    margin-left: -33px;
+    z-index: 3;
+}
+
+.serv_top .top_mil:first-child {
+    margin-left: 10px;
+}
+
+.serv_top .top_mil:last-child {
+    margin-right: 10px;
+}
+
+.serv_top .top_dev {
+    width: 122px;
+    height: 122px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background: url("../img/yq.png") no-repeat center center;
+    background-size: 122px 122px;
+}
+
+.serv_top .top_mil span {
+    font-size: 22px;
+    color: #BEBBBF;
+}
+
+.serv_fot {
+    margin-top: 10px;
+}
+
+.top_dev {
+    transition: all 1s;
+}
+
+.top_dev:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    /* IE 9 */
+    -moz-transform: rotate(360deg);
+    /* Firefox */
+    -webkit-transform: rotate(360deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(360deg);
+    /* Opera */
 }
