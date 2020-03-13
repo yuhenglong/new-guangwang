@@ -174,16 +174,23 @@ body {
 } */
 
 .footer-list {
-    /* float: left; */
     width: 100%;
     text-align: center;
 }
 
 .footer-list div {
-    padding: 0 50px;
+    padding: 0 55px;
     display: inline-block;
     vertical-align: top;
     height: 130px;
+}
+
+.footer-list div:first-child {
+    padding-left: 0;
+}
+
+.footer-list div:last-child {
+    padding-right: 0;
 }
 
 .footer-list div h3 {
