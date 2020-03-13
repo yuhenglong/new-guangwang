@@ -591,6 +591,10 @@ li {
     margin-top: 10px;
 }
 
+.serv_fot .top_mil {
+    height: 30px;
+}
+
 .top_dev {
     transition: all 1s;
 }
