@@ -85,8 +85,8 @@ function getData(num) {
         for (i; i < j; i++) {
             var html = `<div class="am-u-md-4 am-u-lg-4 news-content">
                             <div class="sPage">
-                                <a href="javascript:void(0)">
-                                    <p><img width="338" height="180" src="` + data.dataNew[i].img + `"></p>
+                                <a href="./news.html?id=` + i +
+                `"><p><img width="338" height="180" src="` + data.dataNew[i].img + `"></p>
                                     <p class="newsTitle">` + data.dataNew[i].title + `</p>
                                     <p class="createTime">` + data.dataNew[i].time + `</p>
                                     <p class="createTime">` + data.dataNew[i].content + `</p>

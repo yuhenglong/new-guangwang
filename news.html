@@ -13,9 +13,10 @@
     <meta name="description" content="创新科技，让广告不再是一个平面。" />
     <META name="robots" name="all">
     <link href="css/amazeui.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/amazeui.swiper.min.css">
+    <link rel="stylesheet" href="css/amazeui.swiper.min.css" />
     <link href="css/main.css" rel="stylesheet">
     <link href="css/page.css" rel="stylesheet">
+    <link href="css/content.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
         <div class="header-context">
             <div class='am-topbar-brand'>
                 <a href="index.html" class="am-text-ir">
-                    <img src="img/logo.png" alt="云股传媒" width='100%'>
+                    <img src="img/logo.png" alt="云股" width='100%'>
                 </a>
             </div>
             <div class="am-collapse am-topbar-collapse">
@@ -79,7 +80,7 @@
                         </div>
                     </li>
 
-                    <li class="nav-li hover-underline">
+                    <li class="nav-li">
                         <a href="./mediaIntr.html">
                             媒体介绍
                         </a>
@@ -179,137 +180,38 @@
             </div>
         </div>
     </header>
-    <div class="am-g">
+    <div class="am-g" style="margin-bottom:20px;max-width:1200px">
         <div class="books">
-            <img class="lazy" data-original="img/mtjs.png" style='width:100%;display:block' />
+            <img src="img/newBcakground.png" style='width:100%;display:block' />
         </div>
-
-        <div class="model " id='3-1'>
-            <div class="am-container">
-                <div class="title">
-                    <div>
-                        <span>媒体形式</span>
-                    </div>
+        <div class="clearfix" style="overflow:hidden;">
+            <div class="am-u-md-4 am-u-lg-4" style="padding-left:0;">
+                <div class="tj-news">
+                    <h3 class="pad_h3">推荐阅读</h3>
+                    <ul class="tj-list">
+                    </ul>
                 </div>
-                <div class="am-article">
-                    <div class="am-article-bd clearfix">
-
-                        <table width="1200" style="width: 1200px;">
-                            <tbody>
-                                <tr class="firstRow">
-                                    <td width="650" valign="top" style="word-break: break-all;box-sizing:border-box;padding-right:70px;">
-                                        <!-- <p style="text-indent: 0em;text-align: justify; margin-top:30px;text-align:center;"><span style="font-size: 24px;line-height: 30px;">新颖形式</span></p style="text-indent: 0em;text-align: justify; margin-top:30px;"> -->
-                                        <p style="text-indent: 0em;text-align: justify; margin-top:75px;box-sizing:border-box;padding:0 20px;"><span style="font-size: 18px;line-height: 30px;">通过当今最热线下媒体--电梯媒体作为媒介平台，并运用裸眼3D和人脸识别技术，在信息安全的前提下，将媒体广告商及广告主的需求高效率完成，使现代广告营销与大数据完美结合，实现广告投放利益最大化。</span><br/></p>
-                                    </td>
-                                    <td width="500" valign="top" style="word-break: break-all; text-align:center;vertical-align:middle;">
-                                        <p style="text-align:center">
-                                            <img width="560" height="auto" class="lazy" data-original="./img/mtxs.png" style="width: 560px; height: auto;" alt="云股" />
-                                        </p>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <div style="width:1200px;height:auto;overflow: hidden;padding-top:10px;position:relative;">
-                            <div class="box_ye" style="float:left;width:32%;box-sizing:border-box;border:3px solid #ff751d;background-color:#FFF;text-align:center;;border-radius:15px;height:550px;">
-                                <img data-original="./img/ye_box_o.png" alt="" style="margin-top:10px;" class="lazy">
-                                <ul>
-                                    <li style="list-style: none ;text-align:left;">
-                                        <h3 style="font-size: 20px;">聚焦商业综合体和商务楼宇</h3>
-                                    </li style="list-style: disc ;text-align:left;">
-                                    <li style="list-style: disc ;text-align:left;font-size: 16px;line-height: 30px;">注重中高端家庭，中青年白领及金领人士</li>
-                                    <li style="list-style: disc ;text-align:left;font-size: 16px;line-height: 30px;">全国终端日均人流量过百万</li>
-                                </ul>
+            </div>
+            <div class="am-u-md-8 am-u-lg-8" style="padding-left:0;">
+                <div class="s-content">
+                    <div class="am-container">
+                        <h1 id="dom_h1"></h1>
+                        <p id="dom_h" class="t-time"></p>
+                        <div id="contentNew" class="am-article">
+                            <div class="t-tool">
+                                <a href="" id="last">上一篇</a>
+                                <a href="./companyNews.html">返回</a>
+                                <a href="" id="next">下一篇</a>
                             </div>
-                            <div class="box_ye" style="float:left;width:32%;box-sizing:border-box;border:3px solid #ff751d;background-color:#FFF;text-align:center;;border-radius:15px;margin:0 2%;height:550px;">
-                                <img data-original="./img/ye_box_t.png" alt="" style="margin-top:10px;" class="lazy">
-                                <ul>
-                                    <li style="list-style: none ;text-align:left;">
-                                        <h3 style="font-size: 20px;">裸眼3D梯媒行业独角兽</h3 style="font-size: 20px;">
-                                    </li style="list-style: disc ;text-align:left;">
-                                    <li style="list-style: disc ;text-align:left;font-size: 16px;line-height: 30px;">弥补传统2D广告痛点</li>
-                                    <li style="list-style: disc ;text-align:left;font-size: 16px;line-height: 30px;">成倍提高广告吸引力，让广告效果翻倍</li>
-                                </ul>
-                            </div>
-                            <div class="box_ye" style="float:left;width:32%;box-sizing:border-box;border:3px solid #ff751d;background-color:#FFF;text-align:center;;border-radius:15px;height:550px;">
-                                <img data-original="./img/ye_box_th.png" alt="" style="margin-top:10px;" class="lazy">
-                                <ul>
-                                    <li style="list-style: none ;text-align:left;">
-                                        <h3 style="font-size: 20px;">智能大数据动态上刊</h3 style="font-size: 20px;">
-                                    </li style="list-style: disc ;text-align:left;">
-                                    <li style="list-style: disc ;text-align:left;font-size: 16px;line-height: 30px;">通过大数据的筛选，客户可自定义上刊区域</li>
-                                    <li style="list-style: disc ;text-align:left;font-size: 16px;line-height: 30px;">后台安全智能服务器云端，随时智能上刊</li>
-                                </ul>
-                            </div>
-                            <img data-original="./img/zst_m.png" alt="" style="position:absolute;bottom:32px;left:50%;margin-left:-398px;" class="lazy">
                         </div>
-                        <p><br/></p>
-                        <p></p>
-
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="model" id='3-2' style="background:#F9FAFB">
-            <div class="am-container">
-                <div class="title">
-                    <div>
-                        <span>媒体优势</span>
-                    </div>
-                </div>
-                <div class="am-article">
-                    <div class="am-article-bd clearfix">
-
-                        <table width="1200" style="width: 1200px;">
-                            <tbody>
-                                <tr class="firstRow">
-                                    <td width="650" valign="top" style="word-break: break-all;">
-                                        <p style="text-indent: 0em;text-align: justify; margin-top:30px;text-align:center;"><span style="font-size: 24px;line-height: 30px;" class="span_af">震撼视觉效果</span></p style="text-indent: 0em;text-align: justify; margin-top:30px;">
-                                        <p style="text-indent: 0em;text-align: justify; margin-top:20px;box-sizing:border-box;padding:0 20px;"><span style="font-size: 16px;line-height: 30px;">提供新，真，奇以及逼真的立体画面，让广告效果更易实现，让品牌更具有识别性。裸眼3D技术还可以提供消费者“沉浸式”体验感，大幅度提升消费者对其的印象和关注度，并且裸眼3D以其震撼的视觉体验可以在短时间内吸引观众。百度百科资料指出，投放3D广告关注度将是投放2D广告关注度的7倍以上。</span><br/></p>
-                                    </td>
-                                    <td width="500" valign="top" style="word-break: break-all; text-align:center;vertical-align:middle;">
-                                        <p style="text-align:center">
-                                            <img width="560" height="auto" class="lazy" data-original="./img/zhsj.png" style="width: 560px; height: auto;" alt="云股" />
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="500" valign="top" style="word-break: break-all; text-align:center;vertical-align:middle;">
-                                        <p style="text-align:center;margin-top:30px;">
-                                            <img width="560" height="auto" class="lazy" data-original="./img/xxg.png" style="width: 560px; height: auto;" alt="云股" />
-                                        </p>
-                                    </td>
-                                    <td width="650" valign="top" style="word-break: break-all;">
-                                        <p style="text-indent: 0em;text-align: justify; margin-top:40px;text-align:center;"><span style="font-size: 24px;line-height: 30px;" class="span_af">视觉新鲜感</span></p style="text-indent: 0em;text-align: justify; margin-top:30px;">
-                                        <p style="text-indent: 0em;text-align: justify; margin-top:20px;box-sizing:border-box;padding:0 20px;"><span style="font-size: 16px;line-height: 30px;">在这个信息爆炸的时代，单纯的2D屏幕除了在特殊场景下有作用之外，它似乎已经很难再让观众印象深刻了。裸眼3D技术可以给消费者带来视觉冲击产生记忆，解决传统2D广告“容易被遗忘”的缺点，也可以弥补其无法做到“交互性”。根据百度百科的资料显示，投放3D广告的记忆度将是投放2D广告记忆度的14倍以上。</span><br/></p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td width="650" valign="top" style="word-break: break-all;">
-                                        <p style="text-indent: 0em;text-align: justify; margin-top:40px;text-align:center;"><span style="font-size: 24px;line-height: 30px;" class="span_af">精准定位</span></p style="text-indent: 0em;text-align: justify; margin-top:30px;">
-                                        <p style="text-indent: 0em;text-align: justify; margin-top:20px;box-sizing:border-box;padding:0 20px;"><span style="font-size: 16px;line-height: 30px;">现大中城市办公写字楼及购物中心基本都建有电梯，覆盖广，投放广告的曝光率则也大大上升。云股传媒的广告机在广州，深圳，珠海，武汉，成都，江门，等数十个一二线城市拥有超过上千台广告机，人流量过百万，更精准快速地触及理想消费群体。</span><br/></p>
-                                    </td>
-                                    <td width="500" valign="top" style="word-break: break-all; text-align:center;vertical-align:middle;">
-                                        <p style="text-align:center;margin-top:30px;">
-                                            <img width="560" height="auto" class="lazy" data-original="./img/jzdw.png" style="width: 560px; height: auto;" alt="云股" />
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p></p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
     <div class="footer">
         <div class="foot-context clearfix">
-
             <div class="footer-list clearfix">
 
                 <div>
@@ -518,5 +420,86 @@
 <script src="js/lib/amazeui.lazyload.min.js"></script>
 <script src="js/page.js"></script>
 
+<script src="js/lib/amazeui.page.js"></script>
+<script src="js/content.js"></script>
+<script>
+    $(function() {
+        const id = window.location.search;
+        const val = id.split("?id=")[1];
+        $.get("./js/data.json", function(res) {
+            // 新闻内容和图片模块
+            const obj = res.dataNew[val].newPage;
+            for (let key in obj) {
+                let rexp = /^p/;
+                let rexi = /^img/;
+                if (rexp.test(key)) {
+                    const dom_p = `<p>` + obj[key] + `</p>`;
+                    $(".t-tool").before(dom_p);
+                } else if (rexi.test(key)) {
+                    const dom_img = `<img src="` + obj[key] + `" alt="云股传媒">`;
+                    $(".t-tool").before(dom_img);
+                } else {
+                    const dom_h = `<h2><span>` + obj[key] + `</span></h2>`;
+                    $(".t-tool").before(dom_h);
+                }
+            }
+            // 时间模块
+            const newsTime = `发布时间： ` + res.dataNew[val].time;
+            $("#dom_h").append(newsTime);
+            // 标题模块
+            const newsTitle = res.dataNew[val].title;
+            $("#dom_h1").text(newsTitle);
+            // 上一篇
+            go("last", val);
+            // 下一篇
+            go("next", val);
+            // 推荐阅读
+            recommendRead(val);
+
+            function recommendRead(val) {
+                let newVal = parseInt(val);
+                if (newVal !== 0) {
+                    newVal -= 1;
+                } else {
+                    newVal = 0;
+                }
+                const four = newVal + 3;
+                const thr = newVal + 2;
+                // 从每周推文里面选
+                for (let i = newVal; i < four; i++) {
+                    let objData = res.dataNew[i].title;
+                    let importNew = `<li><a href="/content/4bb290b1551a4a8a94a94285f90798c3"><p>
+                                   ` + objData + `</p></a></li>`;
+                    $(".tj-list").append(importNew);
+                }
+                // 从重大事件里面选
+                for (let i = newVal; i < thr; i++) {
+                    let objImport = res.importNews[i].title;
+                    let importNew = `<li><a href="/content/4bb290b1551a4a8a94a94285f90798c3"><p>
+                                   ` + objImport + `</p></a></li>`;
+                    $(".tj-list").append(importNew);
+                }
+            };
+        })
+
+        function go(action, val) {
+            let newVal = parseInt(val);
+            if (action == "last") {
+                if (newVal !== 0) {
+                    newVal -= 1;
+                } else {
+                    newVal = 0;
+                }
+                const urlLast = `./news.html?id=` + parseInt(newVal);
+
+                $("#last").attr("href", urlLast);
+            } else {
+                newVal += 1;
+                const urlNext = `./news.html?id=` + parseInt(newVal);
+                $("#next").attr("href", urlNext);
+            }
+        }
+    })
+</script>
 
 </html>
