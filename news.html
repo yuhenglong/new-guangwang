@@ -468,14 +468,14 @@
                 // 从每周推文里面选
                 for (let i = newVal; i < four; i++) {
                     let objData = res.dataNew[i].title;
-                    let importNew = `<li><a href="/content/4bb290b1551a4a8a94a94285f90798c3"><p>
+                    let importNew = `<li><a href="./news.html?id=` + i + `"><p>
                                    ` + objData + `</p></a></li>`;
                     $(".tj-list").append(importNew);
                 }
                 // 从重大事件里面选
                 for (let i = newVal; i < thr; i++) {
                     let objImport = res.importNews[i].title;
-                    let importNew = `<li><a href="/content/4bb290b1551a4a8a94a94285f90798c3"><p>
+                    let importNew = `<li><a href="./news.html?id=0"><p>
                                    ` + objImport + `</p></a></li>`;
                     $(".tj-list").append(importNew);
                 }
