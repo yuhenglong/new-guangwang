@@ -244,7 +244,7 @@ li {
 }
 
 .a_img {
-    width: 100%;
+    width: 697px;
     display: block;
     padding-top: 0px;
     position: absolute;
@@ -258,11 +258,17 @@ li {
 }
 
 .change {
-    width: 1200px;
-    height: 445px;
+    width: 699px;
+    height: 382px;
     position: relative;
     box-shadow: 0px 0px 8px 0px rgba(102, 102, 102, 0.4);
     border: 1px solid #ccc;
+    border-right: none;
+}
+
+.e_cc {
+    border: 1px solid #ccc;
+    border-right: none;
 }
 
 .change .a_img:nth-child(1) {
@@ -320,7 +326,7 @@ li {
 
 .img_zz {
     display: block !important;
-    width: 400px;
+    width: 1200px;
     height: auto;
     float: left;
 }
@@ -665,4 +671,8 @@ li {
     width: 64px;
     height: 64px;
     background-image: url(../img/shangquan.png);
+}
+
+#text_t {
+    padding-left: 10px;
 }

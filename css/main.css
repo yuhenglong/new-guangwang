@@ -257,65 +257,85 @@ body {
 
 /* 恒隆start */
 
-
-/* 
-.footer-list {
-    margin: 0 29px;
-} */
-
 .footer_connect {
     color: #fff;
 }
 
 .footer_connect h3 {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
 }
 
 .footer_connect .f_c_i {
     overflow: hidden;
+    margin: 10px 0;
+}
+
+.f_c_i textarea {
+    color: #333;
+    border: 1px solid #ccc;
+    outline: none;
 }
 
 .footer_connect .f_c_i input {
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
     outline: none;
-    border: none;
+    border: 1px solid #ccc;
     font-size: 14px;
     line-height: 14px;
-    color: #666;
+    color: #333;
     padding: 5px 5px 5px 10px;
     border-radius: 5px;
     box-sizing: border-box;
     width: 172px;
 }
 
-.footer_connect .f_c_i span {
-    float: left;
+.footer_connect .f_c_i .xh {
     color: red;
-    font-size: 23px;
-    display: block;
-    width: 20px;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 23px;
     text-align: center;
+}
+
+.footer_connect .f_c_i .f_c_s {
+    width: 160px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 80px;
+    box-sizing: border-box;
+    color: #333;
 }
 
 .footer_connect .f_c_i .f_btn {
     outline: none;
-    border: none;
+    border: 1px solid #ff751d;
     display: block;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 28 px;
     width: 172px;
     height: 30px;
     border-radius: 5px;
     text-align: center;
     background-color: #fff;
-    color: #409eff;
+    color: #ff751d;
     box-sizing: border-box;
+    margin: 10px auto;
+}
+
+.footer_connect .f_c_i .f_btn:hover {
+    background-color: #ff751d;
+    color: #fff;
 }
 
 .footer_connect {
     float: left;
-    width: 210px;
+    width: 100%;
 }
 
 .wb_yu {
@@ -327,6 +347,12 @@ body {
     display: block;
     width: 42px;
     height: 40px;
+}
+
+.email_box {
+    width: 500px;
+    position: relative;
+    float: left;
 }
 
 .wx img:first-child:hover {

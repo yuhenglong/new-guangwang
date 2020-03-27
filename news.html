@@ -33,7 +33,7 @@
 
                     <li class="nav-li">
                         <a href="./aboutYG.html">
-                            关于云股
+                            云股发展
                         </a>
                         <div class="ty-menu clearfix">
 
@@ -46,13 +46,13 @@
 
                             <p>
                                 <a href="./aboutYG.html#1-2">
-                                            企业文化
+                                            云股布局
                                         </a>
                             </p>
 
                             <p>
                                 <a href="./aboutYG.html#1-3">
-                                            云股团队
+                                            招商引资
                                         </a>
                             </p>
 
@@ -160,16 +160,19 @@
                             联系我们
                         </a>
                         <div class="ty-menu clearfix">
-
                             <p>
                                 <a href="./link.html#6-1">
-                                            诚聘英才
+                                            公司分布
                                         </a>
                             </p>
-
                             <p>
                                 <a href="./link.html#6-2">
                                             联络方式
+                                        </a>
+                            </p>
+                            <p>
+                                <a href="./link.html#6-3">
+                                            诚聘英才
                                         </a>
                             </p>
 
@@ -217,7 +220,7 @@
                 <div>
                     <h3>
                         <a href="./aboutYG.html">
-                            关于云股
+                            云股发展
                         </a>
                     </h3>
 
@@ -232,13 +235,13 @@
 
                     <li>
                         <a href="./aboutYG.html#1-2">
-                                企业文化
+                                云股布局
                             </a>
                     </li>
 
                     <li>
                         <a href="./aboutYG.html#1-3">
-                                云股团队
+                                招商引资
                             </a>
                     </li>
 
@@ -351,17 +354,21 @@
                             联系我们
                         </a>
                     </h3>
-
-
                     <li>
                         <a href="./link.html#6-1">
-                                诚聘英才
+                                公司分布
                             </a>
                     </li>
 
                     <li>
                         <a href="./link.html#6-2">
                                 联络方式
+                            </a>
+                    </li>
+
+                    <li>
+                        <a href="./link.html#6-3">
+                                诚聘英才
                             </a>
                     </li>
 
@@ -463,7 +470,7 @@
                 } else {
                     newVal = 0;
                 }
-                const four = newVal + 3;
+                const four = newVal + 5;
                 const thr = newVal + 2;
                 // 从每周推文里面选
                 for (let i = newVal; i < four; i++) {
@@ -473,12 +480,12 @@
                     $(".tj-list").append(importNew);
                 }
                 // 从重大事件里面选
-                for (let i = newVal; i < thr; i++) {
-                    let objImport = res.importNews[i].title;
-                    let importNew = `<li><a href="./news.html?id=0"><p>
-                                   ` + objImport + `</p></a></li>`;
-                    $(".tj-list").append(importNew);
-                }
+                // for (let i = newVal; i < thr; i++) {
+                //     let objImport = res.importNews[i].title;
+                //     let importNew = `<li><a href="./news.html?id=0"><p>
+                //                    ` + objImport + `</p></a></li>`;
+                //     $(".tj-list").append(importNew);
+                // }
             };
         })
 

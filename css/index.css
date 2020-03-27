@@ -28,7 +28,7 @@ h1 {
 }
 
 .ty-media .ty-btn {
-    color: #0E0D12;
+    color: #ff751d;
     /* border: 1px solid #0E0D12; */
     padding: 4px 12px;
     float: right;
@@ -155,7 +155,7 @@ h1 {
 }
 
 .about-context a {
-    color: #0E0D12;
+    color: #ff751d;
     padding: 4px 12px;
     font-size: 14px;
     float: right;
@@ -287,14 +287,15 @@ h1 {
 }
 
 .hov_a {
-    border: 1px solid #ccc;
+    border: 1px solid #ff751d;
     border-radius: 5px;
 }
 
 .hov_a:hover {
     border: 1px solid #ff751d;
     border-radius: 5px;
-    color: #ff751d;
+    color: #fff;
+    background-color: #ff751d;
 }
 
 .swiper-pagination-bullet-active {

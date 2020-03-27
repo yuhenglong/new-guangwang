@@ -66,6 +66,16 @@ $(function() {
         var index = $(this).index()
         $(".change .a_img").siblings().removeClass("z_index_top");
         $(".change .a_img").eq(index).addClass("z_index_top");
+        var arr_place = [{ "place": "广州市天河区黄埔大道西100号富力盈泰广场A座1208号", "phone": "020-32547597" },
+            { "place": "四川省泸州市江阳区佳乐金街1号401", "phone": "0830-8583377" },
+            { "place": "江门市蓬江区万达广场写字楼B座2814", "phone": "0750-3910183" },
+            { "place": "湖北武汉市江汉民生路20号世纪中心写字楼", "phone": "027-82807886" },
+            { "place": "深圳福田金田路3038号现代国际大厦7楼703", "phone": "0755-82780825" },
+            { "place": "四川成都市高新天府大道中段530号东方希望天祥广场B座4202", "phone": "028-65586589" },
+            { "place": "湖北天门竟陵东湖路维也纳国际酒店东湖国际酒店六楼601-603室", "phone": "0728-5222818" }
+        ];
+        $("#add_place").html(arr_place[index].place);
+        $("#p_phone").html(arr_place[index].phone);
     });
 
 })
