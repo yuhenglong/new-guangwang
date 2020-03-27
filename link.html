@@ -291,22 +291,22 @@
                             <div class="footer_connect clearfix e_cc">
                                 <h3>欢迎留下联系方式与您沟通！</h3>
                                 <div class="f_c_i ">
-                                    <span class="f_c_s">姓名：</span><input type="text" placeholder="您的称呼"><span class="xh">*</span>
+                                    <span class="f_c_s">姓名：</span><input type="text" placeholder="您的称呼" id="name_cont"><span class="xh">*</span>
                                 </div>
                                 <div class="f_c_i ">
-                                    <span class="f_c_s">电话：</span><input type="text" placeholder="您的电话号码"><span class="xh">*</span>
+                                    <span class="f_c_s">电话：</span><input type="text" placeholder="您的电话号码" id="phone_cont"><span class="xh">*</span>
                                 </div>
                                 <div class="f_c_i ">
-                                    <span class="f_c_s">所在城市：</span><input type="text" placeholder="您的所在的城市">
+                                    <span class="f_c_s">所在城市：</span><input type="text" placeholder="您的所在的城市" id="city_cont">
                                 </div>
                                 <div class="f_c_i ">
-                                    <span class="f_c_s">邮箱：</span><input type="text " placeholder="您的邮箱">
+                                    <span class="f_c_s">邮箱：</span><input type="text " placeholder="您的邮箱" id="email_cont">
                                 </div>
                                 <div class="f_c_i ">
                                     <span class="f_c_s">留言：</span><textarea name="massage" id="text_t" cols="40" rows="5" placeholder="欢迎您的留言反馈"></textarea>
                                 </div>
                                 <div class="f_c_i ">
-                                    <button click="#" class="f_btn">提交</button>
+                                    <button class="f_btn" id="commit">提交</button>
                                 </div>
                             </div>
                         </div>
@@ -397,7 +397,7 @@
                             </thead>
                             <tbody>
 
-                                <tr onclick='location.href="work/83378cc89913424dbc693928afc7e32d"'>
+                                <tr onclick='location.href="javascript:(0);"'>
                                     <td>销售部</td>
                                     <td>销售总监 、销售经理</td>
                                     <!-- <td>0</td> -->
@@ -405,7 +405,7 @@
                                     <td>2019-07-05</td>
                                 </tr>
 
-                                <tr onclick='location.href="work/a340709414004e5887105272d45b2784"'>
+                                <tr onclick='location.href="javascript:(0);"'>
                                     <td>物业开发部</td>
                                     <td>物业开发专员</td>
                                     <!-- <td>0</td> -->
@@ -413,7 +413,7 @@
                                     <td>2018-07-20</td>
                                 </tr>
 
-                                <tr onclick='location.href="work/c51811e496884211a1e1e2aa40345f0f"'>
+                                <tr onclick='location.href="javascript:(0);"'>
                                     <td>物业开发部</td>
                                     <td>物业维护专员</td>
                                     <!-- <td>0</td> -->
@@ -429,8 +429,6 @@
             </div>
         </div>
     </div>
-
-
 
     <div class="footer ">
         <div class="foot-context clearfix ">
@@ -646,5 +644,39 @@
 <script src="js/lib/amazeui.min.js "></script>
 <script src="js/lib/amazeui.lazyload.min.js "></script>
 <script src="js/page.js "></script>
+<script>
+    $(function() {
+        $("#name_cont").blur(function() {
+            let name_val = $(this).val().trim();
+            if (name_val == '') {
+                alert("请输入您的姓名")
+            }
+        })
+        $("#phone_cont").blur(function() {
+            let phone_val = $(this).val().trim();
+            if (phone_val == '' || !(/^1[3456789]\d{9}$/.test(phone_val))) {
+                alert("请输入正确的电话号码")
+            }
+        })
+        $("#commit").click(function() {
+            let name_val = $("#name_cont").val().trim();
+            if (name_val == '') {
+                alert("请输入您的姓名");
+                return;
+            }
+            let phone_val = $("#phone_cont").val().trim();
+            if (phone_val == '' || !(/^1[3456789]\d{9}$/.test(phone_val))) {
+                alert("请输入正确的电话号码");
+                return;
+            }
+            alert("提交成功，我们将稍后联系您！");
+            $("#name_cont").val('');
+            $("#phone_cont").val('');
+            $("#city_cont").val('');
+            $("#email_cont").val('');
+            $("#text_t").val('');
+        })
+    })
+</script>
 
 </html>
