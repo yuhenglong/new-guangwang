@@ -207,6 +207,14 @@ body {
     font-size: 14px;
 }
 
+.footer-list div li:hover a {
+    color: #ff751d;
+}
+
+.footer-list div h3:hover a {
+    color: #ff751d;
+}
+
 .copy {
     color: #ccc;
     text-align: center;

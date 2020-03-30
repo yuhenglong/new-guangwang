@@ -42,7 +42,8 @@ h1 {
 }
 
 .mode-img {
-    background: #0E0D12;
+    background: #ff751d;
+    /* background: #0E0D12; */
     border-radius: 50%;
     width: 120px;
     height: 120px;
