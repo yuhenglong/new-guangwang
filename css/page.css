@@ -465,7 +465,7 @@ li {
 
 .bb_box p {
     color: #fff;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .pro_yy:hover .bb_box p {
@@ -675,4 +675,6 @@ li {
 
 #text_t {
     padding-left: 10px;
+    display: inline-block;
+    width: 300px;
 }
