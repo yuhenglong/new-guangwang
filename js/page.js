@@ -92,10 +92,12 @@ function getData(num) {
         $("#pages").html('');
         var i = (num - 1) * 6;
         var j = i + 6;
+        // 获取时间戳
+        let timestamp = Date.parse(new Date());
         for (i; i < j; i++) {
             var html = `<div class="am-u-md-4 am-u-lg-4 news-content">
                             <div class="sPage">
-                                <a href="./news.html?id=` + i +
+                                <a href="./news.html?id=` + i + `&time=` + timestamp +
                 `"><p><img width="338" height="180" src="` + data.dataNew[i].img + `"></p>
                                     <p class="newsTitle">` + data.dataNew[i].title + `</p>
                                     <p class="createTime">` + data.dataNew[i].time + `</p>
