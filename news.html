@@ -440,7 +440,7 @@
 <script src="js/content.js"></script>
 <script>
     $(function() {
-        const id = window.location.search;
+        // const id = window.location.search;
         const val = getQueryVariable("id");
         $.get("./js/data.json", function(res) {
             // 新闻内容和图片模块
@@ -509,27 +509,21 @@
                 } else {
                     newVal = 0;
                 }
-                const urlLast = `./news.html?id=` + parseInt(newVal);
+                // 获取时间戳
+                let timestamp = Date.parse(new Date());
+                const urlLast = `./news.html?id=` + parseInt(newVal) + `&time=` + timestamp;
 
                 $("#last").attr("href", urlLast);
             } else {
                 newVal += 1;
-                const urlNext = `./news.html?id=` + parseInt(newVal);
+                // 获取时间戳
+                let timestamp = Date.parse(new Date());
+                const urlNext = `./news.html?id=` + parseInt(newVal) + `&time=` + timestamp;
                 $("#next").attr("href", urlNext);
             }
         }
 
-        function getQueryVariable(variable) {
-            var query = window.location.search.substring(1);
-            var vars = query.split("&");
-            for (var i = 0; i < vars.length; i++) {
-                var pair = vars[i].split("=");
-                if (pair[0] == variable) {
-                    return pair[1];
-                }
-            }
-            return (false);
-        }
+
     })
 </script>
 
